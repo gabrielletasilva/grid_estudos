@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+#app {
+    display: grid;
+
+    /* grid-template-areas: 
+    "A B B"
+    "A B B"
+    "A D D"; */
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);               /* 1fr 1fr 1fr;  deixar flexivel entre si */
+
+    height: 100vh;
+ /* grid-template-columns: 1fr 1fr 1fr; 2 partes para o meio e 1 em cada nas laterais  */
+ /* grid-template-columns: repeat(3, 1fr); a 1 parte é quantas vezes quero que repita e a 2 parte é qual é 
+ o tamanho de cada uma das repetições */
+
+    border: 2px solid green;
+}
+
+#app > * {
+    border: 1px solid blue;
+}
+
+#app header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /*grid-row-start: 1 
+      grid-row-end:4
+    */
+
+     /* grid-area: A; */
+}
+
+#app main {
+    grid-column: 1/3; /* versão curta */
+    /*grid-column: 2/4 
+      grid-row:1/3
+    */
+
+   /* grid-area: B; */
+}
+
+#app footer {
+    grid-column: 1/4;
+}
