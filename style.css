@@ -8,10 +8,20 @@ body {
     /* grid-template-areas: 
     "A B B"
     "A B B"
-    "A D D"; */
+    "A D D"; 
+    
+    ou
+    
+    "header header header"
+    "main main aside"
+    "footer footer footetr"; */
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);               /* 1fr 1fr 1fr;  deixar flexivel entre si */
+
+    row-gap: 30px; /* para dar um espaço entre as linhas */
+
+    column-gap: 40px; /* para dar um espaço entre as colunas */
 
     height: 100vh;
  /* grid-template-columns: 1fr 1fr 1fr; 2 partes para o meio e 1 em cada nas laterais  */
@@ -33,6 +43,8 @@ body {
     */
 
      /* grid-area: A; */
+
+     /* grid-area: header; */
 }
 
 #app main {
@@ -42,8 +54,12 @@ body {
     */
 
    /* grid-area: B; */
+
+    /* grid-area: main; */
 }
 
 #app footer {
     grid-column: 1/4;
+
+     /* grid-area: footer; */
 }
